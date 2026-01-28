@@ -13,8 +13,8 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/taihen/ros-exporter/pkg/metrics"
-	"github.com/taihen/ros-exporter/pkg/mikrotik"
+	"github.com/mrymail/ros-exporter/pkg/metrics"
+	"github.com/mrymail/ros-exporter/pkg/mikrotik"
 )
 
 const defaultUsername = "prometheus"
