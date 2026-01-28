@@ -1,4 +1,4 @@
-module github.com/taihen/ros-exporter
+module github.com/mrymail/ros-exporter
 
 go 1.24
 
