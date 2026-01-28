@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/taihen/ros-exporter/pkg/mikrotik"
+	"github.com/mrymail/ros-exporter/pkg/mikrotik"
 )
 
 const namespace = "mikrotik"
