@@ -374,8 +374,8 @@ func (c *Client) GetInterfaceStats() ([]InterfaceStat, error) {
 		}
 
 		ifaceType := re.Map["type"]
-		if strings.Contains(strings.ToLower(ifaceType), "ppp") ||
-			strings.Contains(strings.ToLower(name), "ppp") {
+		if (strings.Contains(strings.ToLower(ifaceType), "ppp") && !strings.Contains(strings.ToLower(ifaceType), "pppoe")) ||
+			(strings.Contains(strings.ToLower(name), "ppp") && !strings.Contains(strings.ToLower(name), "pppoe")) {
 			log.Printf("Skipping PPP interface: %s (type: %s)", name, ifaceType)
 			continue
 		}
